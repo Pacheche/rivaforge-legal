@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad — RivaForge</title>
+  <meta name="description" content="Política de privacidad de la aplicación Android RivaForge (io.github.pacheche.rivaforge).">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --text: #171717;
+      --muted: #525252;
+      --border: #e5e5e5;
+      --accent: #0f766e;
+      --accent-soft: #f0fdfa;
+      --code-bg: #f4f4f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --surface: #171a21;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --border: #2a2f3a;
+        --accent: #2dd4bf;
+        --accent-soft: #132a29;
+        --code-bg: #1f2430;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .meta dt {
+      display: inline;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .meta dd {
+      display: inline;
+      margin: 0 16px 0 4px;
+    }
+    .meta-row {
+      margin: 4px 0;
+    }
+    .lead {
+      margin: 20px 0 0;
+      font-size: 1.05rem;
+    }
+    nav[aria-label="Índice"] {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+    }
+    nav[aria-label="Índice"] p {
+      margin: 0 0 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    nav[aria-label="Índice"] ol {
+      margin: 0;
+      padding-left: 20px;
+      columns: 2 260px;
+      column-gap: 24px;
+    }
+    nav[aria-label="Índice"] li {
+      margin: 4px 0;
+      break-inside: avoid;
+    }
+    h2 {
+      margin: 40px 0 14px;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+    section:first-of-type h2 {
+      border-top: none;
+      margin-top: 0;
+    }
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 1.08rem;
+      line-height: 1.35;
+    }
+    p { margin: 0 0 14px; }
+    ul, ol { margin: 0 0 16px; padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.88em;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      word-break: break-word;
+    }
+    .callout {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 16px 18px;
+      border-radius: 6px;
+      margin: 16px 0 20px;
+    }
+    .callout p:last-child { margin-bottom: 0; }
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0 20px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.94rem;
+      min-width: 560px;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    tr:last-child td { border-bottom: none; }
+    th {
+      font-weight: 600;
+      background: var(--code-bg);
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Política de privacidad de RivaForge</h1>
+      <dl class="meta">
+        <div class="meta-row"><dt>Última actualización:</dt><dd>19 de noviembre de 2026</dd></div>
+        <div class="meta-row"><dt>Aplicación:</dt><dd>RivaForge (Android <code>io.github.pacheche.rivaforge</code>)</dd></div>
+        <div class="meta-row"><dt>Responsable:</dt><dd>Pacheche (desarrollador independiente, persona física, no comerciante)</dd></div>
+        <div class="meta-row"><dt>Contacto:</dt><dd><a href="mailto:emprendimientosriva@gmail.com">emprendimientosriva@gmail.com</a></dd></div>
+      </dl>
+      <p class="lead">Esta política explica qué datos procesa RivaForge, para qué los usa, qué servicios externos intervienen y cómo podés gestionar o eliminar tu información. RivaForge es una aplicación gratuita: no muestra anuncios, no vende datos personales ni procesa pagos.</p>
+    </header>
+
+    <nav aria-label="Índice">
+      <p>Contenido</p>
+      <ol>
+        <li><a href="#datos">Qué datos recopilamos</a></li>
+        <li><a href="#finalidad">Para qué usamos los datos</a></li>
+        <li><a href="#uso-limitado">Uso limitado de Health Connect y Google API</a></li>
+        <li><a href="#proveedores">Proveedores de infraestructura</a></li>
+        <li><a href="#transferencias">Transferencias internacionales</a></li>
+        <li><a href="#retencion">Conservación y retención</a></li>
+        <li><a href="#eliminacion-cuenta">Eliminación de cuenta y datos</a></li>
+        <li><a href="#derechos">Tus derechos</a></li>
+        <li><a href="#menores">Menores de edad</a></li>
+        <li><a href="#cambios">Cambios en esta política</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ol>
+    </nav>
+
+    <section id="datos">
+      <h2>1. Qué datos recopilamos y cómo los obtenemos</h2>
+
+      <h3>1.1. Cuenta y autenticación (obligatorio para nuevos usuarios)</h3>
+      <p>Para crear y vincular tu cuenta usás el acceso con Google (OAuth 2.0 mediante Supabase Auth). Recibimos de Google tu dirección de correo electrónico, un identificador único de usuario (UUID generado por Supabase) y, si tu cuenta de Google la tiene, la URL de tu foto de perfil para mostrarla como avatar. Después del primer inicio de sesión podés entrenar sin conexión; tus registros se sincronizan cuando volvés a conectarte.</p>
+
+      <h3>1.2. Datos de entrenamiento, perfil y archivos que cargás</h3>
+      <p>Todo lo que registrás en la app se guarda localmente en tu teléfono y se sincroniza con tu cuenta privada en Supabase para respaldo y uso en varios dispositivos:</p>
+      <ul>
+        <li><strong>Perfil de entrenamiento (todos los campos son opcionales):</strong> nombre, edad (18 a 100 años), altura, peso corporal, sexo, nivel de experiencia, objetivos, días disponibles por semana y minutos por sesión.</li>
+        <li><strong>Entrenamiento:</strong> rutinas, ejercicios propios, sesiones registradas (series, cargas, repeticiones, tiempo, RIR, descansos y notas), historial importado, lugares de entrenamiento y equipamiento disponible, agenda semanal y preferencias de la app (unidad kg/lb, tema y movimiento).</li>
+        <li><strong>Antropometría e informes:</strong> mediciones corporales manuales y archivos que elijas importar (PDF, imágenes, Word, Excel o texto) junto con el texto extraído. Los archivos originales (hasta 20 MB cada uno) se respaldan en almacenamiento privado de tu cuenta.</li>
+        <li><strong>Foto de perfil personalizada:</strong> si elegís una foto desde la galería o la cámara, se guarda únicamente en tu teléfono y nunca se sube a nuestros servidores.</li>
+      </ul>
+
+      <h3>1.3. Datos de Health Connect (opcional, solo lectura)</h3>
+      <p>RivaForge solo lee datos de Google Health Connect si otorgás permiso explícito en Ajustes o al importar una actividad del reloj. Nunca escribe ni modifica registros en Health Connect.</p>
+      <ul>
+        <li><strong>Actividad del reloj (a pedido del usuario, al tocar «Importar del reloj»):</strong>
+          <ul>
+            <li>Sesiones de ejercicio (<code>READ_EXERCISE</code>): tipo de actividad aeróbica, horario, duración y app de origen.</li>
+            <li>Distancia (<code>READ_DISTANCE</code>): distancia agregada de la sesión importada.</li>
+            <li>Calorías activas (<code>READ_ACTIVE_CALORIES_BURNED</code>) y calorías totales (<code>READ_TOTAL_CALORIES_BURNED</code>, solo si no hay calorías activas disponibles).</li>
+            <li>Frecuencia cardíaca (<code>READ_HEART_RATE</code>): frecuencia cardíaca agregada de la sesión importada.</li>
+          </ul>
+        </li>
+        <li><strong>Mediciones y descanso (sincronización automática en primer plano tras otorgar permiso, máximo una vez por minuto):</strong>
+          <ul>
+            <li>Peso corporal (<code>READ_WEIGHT</code>), porcentaje de grasa corporal (<code>READ_BODY_FAT</code>) y altura (<code>READ_HEIGHT</code>).</li>
+            <li>Sesiones de sueño (<code>READ_SLEEP</code>): hora de inicio, hora de fin y duración total en minutos (no leemos etapas de sueño).</li>
+            <li>Historial de datos de salud (<code>READ_HEALTH_DATA_HISTORY</code>): permite importar hasta 90 días iniciales de mediciones y sueño; sin este permiso, Android limita la lectura inicial a los últimos 30 días.</li>
+          </ul>
+        </li>
+      </ul>
+      <p>Los datos importados de Health Connect se guardan en tu dispositivo y se sincronizan con tu cuenta privada en Supabase para mantener tu historial entre dispositivos. En el caso del sueño, solo se conservan sesiones de los últimos 60 días y los borrados hechos en Health Connect se replican en RivaForge.</p>
+
+      <h3>1.4. Coach de IA «Riva» (opcional, con consentimiento previo)</h3>
+      <p>Si tu cuenta tiene habilitado el asistente Riva y aceptás expresamente su permiso en la app, cuando enviás un mensaje o pedís un comentario de sesión se transmite a nuestro servidor y al proveedor de IA configurado:</p>
+      <ul>
+        <li>El texto que escribís, los últimos 10 turnos de la charla actual y los archivos que adjuntes voluntariamente (hasta 3 archivos por mensaje: imágenes JPEG/PNG/WebP, PDF o planillas CSV/XLSX convertidas a CSV).</li>
+        <li>Tu fecha local y un resumen estructurado de tu cuenta: perfil de entrenamiento, rutinas, lugares/equipamiento, historial de entrenamiento calculado, mediciones corporales confirmadas y un resumen agregado de sueño (promedio de las últimas 14 noches y duración previa a una sesión; nunca se envían las sesiones de sueño en crudo).</li>
+      </ul>
+      <p>Podés revocar el permiso de Riva en cualquier momento desde <strong>Ajustes → Riva AI</strong>. Revocarlo impide nuevos envíos al proveedor de IA; las charlas previas permanecen guardadas solo en tu teléfono.</p>
+
+      <h3>1.5. Diagnóstico técnico y errores</h3>
+      <ul>
+        <li><strong>Sentry (región UE):</strong> registra errores y cierres inesperados con tipo de excepción, pila de llamadas (stack trace) saneada, versión de la app, plataforma y tu UUID de Supabase. No realiza trazado de rendimiento (<em>tracing</em>), no captura breadcrumbs, no adjunta archivos ni envía mensajes libres de error que puedan contener datos tuyos. No recopilamos datos personales por defecto (<code>sendDefaultPii: false</code>) ni almacenamos tu dirección IP.</li>
+        <li><strong>Eventos técnicos propios en Supabase:</strong> cuando iniciás sesión, la app envía eventos acotados de error saneado, tiempos de arranque, demora de alarmas de descanso y códigos de fallo de sincronización, junto con versión de la app, versión de Android, modelo de dispositivo y tu UUID. Nunca incluyen nombres de ejercicios, cargas, rutinas, notas, chat, correo ni nombre.</li>
+      </ul>
+
+      <h3>1.6. Grabación de sesión con PostHog (opcional, solo con tu aceptación)</h3>
+      <p>Está desactivada por defecto. Solo se activa si marcás la casilla «Compartir cómo uso la app para encontrar errores» en la pantalla de bienvenida o en <strong>Ajustes → Riva AI</strong>. Cuando está activa:</p>
+      <ul>
+        <li>Envía grabaciones visuales de uso y rutas de pantalla a PostHog en la Unión Europea, asociadas a tu UUID de Supabase.</li>
+        <li>Todos los textos, campos de escritura e imágenes se enmascaran automáticamente antes de salir del teléfono.</li>
+        <li>No captura registros de consola ni tráfico de red.</li>
+        <li>Si ocurre un error mientras la grabación está activa, Sentry puede incluir el identificador de sesión de PostHog para cruzar el fallo técnico.</li>
+      </ul>
+      <p>Podés desactivarla en cualquier momento desde <strong>Ajustes → Riva AI</strong>.</p>
+
+      <h3>1.7. Conexiones con agentes en tu PC (opcional)</h3>
+      <p>Si elegís vincular un agente externo mediante código de emparejamiento en <strong>Ajustes → Riva AI → Agentes en tu PC</strong>, ese agente accede únicamente a los permisos que autorices explícitamente (lectura de contexto, lectura de originales, envío de propuestas o lotes reversibles). Podés revocar cualquier conexión desde la misma pantalla. Durante el emparejamiento se guarda un hash SHA-256 temporal de la dirección IP del solicitante para limitar intentos abusivos.</p>
+
+      <h3>1.8. Lectura de archivos en el dispositivo (OCR) y actualizaciones</h3>
+      <ul>
+        <li><strong>OCR local (Google ML Kit):</strong> la lectura de texto en fotos o PDF de informes se ejecuta dentro de tu teléfono. Tus imágenes y el texto extraído no se envían a servidores de Google para hacer OCR, aunque el SDK de Google ML Kit puede enviar a Google métricas técnicas de rendimiento y compatibilidad conforme a sus términos.</li>
+        <li><strong>Actualizaciones de la app (Expo Updates):</strong> al abrirse, la app consulta a los servidores de Expo si existe una actualización disponible enviando únicamente metadatos técnicos del paquete y plataforma.</li>
+        <li><strong>Enlaces externos:</strong> algunos ejercicios ofrecen un botón opcional «Ver en YouTube» que abre una búsqueda externa en YouTube; al hacerlo aplican las políticas de YouTube/Google.</li>
+      </ul>
+    </section>
+
+    <section id="finalidad">
+      <h2>2. Para qué usamos los datos</h2>
+      <p>Usamos los datos exclusivamente para:</p>
+      <ol>
+        <li>Autenticar tu cuenta y sincronizar tus rutinas, sesiones, medidas y archivos entre dispositivos.</li>
+        <li>Mostrar tu progreso, volumen semanal, estimaciones de fuerza, mediciones corporales, cardio importado y descanso previo a tus sesiones.</li>
+        <li>Responder tus consultas y preparar propuestas de rutinas o ajustes mediante Riva AI cuando lo solicitás y consentís.</li>
+        <li>Detectar fallos, cierres inesperados y problemas de rendimiento o sincronización.</li>
+        <li>Controlar límites de uso técnico (cuotas diarias y tope mensual de gasto en Riva AI) y proteger la cuenta contra abuso.</li>
+      </ol>
+      <p>No usamos tus datos para publicidad, perfilamiento comercial ni venta a terceros. Ningún dato de entrenamiento, antropometría o Health Connect se utiliza con fines de diagnóstico o tratamiento médico.</p>
+    </section>
+
+    <section id="uso-limitado">
+      <h2>3. Política de Uso Limitado de Google Health Connect y APIs de Google</h2>
+      <div class="callout">
+        <p>El uso que hace RivaForge de la información recibida desde las APIs de Google —incluido Google Health Connect— cumple la <strong>Política de Datos de Usuario de los Servicios de API de Google</strong> (<em>Google API Services User Data Policy</em>) y la <strong>Política de Permisos de Health Connect</strong>, incluidos los requisitos de <strong>Uso Limitado</strong> (<em>Limited Use</em>).</p>
+      </div>
+      <ul>
+        <li>Solo leemos los tipos de datos de Health Connect que aprobaste explícitamente y únicamente para mostrar funciones visibles para vos dentro de RivaForge (registro de cardio, seguimiento corporal, descanso previo a entrenar y contexto para tus consultas a Riva AI si la habilitás).</li>
+        <li>No vendemos datos de Health Connect, no los cedemos a corredores de datos ni los usamos para publicidad, marketing, evaluación crediticia o seguros.</li>
+        <li>No transferimos datos de Health Connect a terceros salvo lo estrictamente necesario para operar la infraestructura de respaldo de tu cuenta (Supabase) o responder una consulta que vos inicies en Riva AI mediante proveedores pagos configurados sin entrenamiento de modelos.</li>
+        <li>No permitimos que humanos lean tus datos de Health Connect, salvo con tu consentimiento expreso para soporte técnico o por obligación legal.</li>
+      </ul>
+    </section>
+
+    <section id="proveedores">
+      <h2>4. Con quién compartimos datos (proveedores de infraestructura)</h2>
+      <p>RivaForge no vende ni cede tus datos a anunciantes. Solo intervienen proveedores técnicos necesarios para prestar el servicio:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Proveedor</th>
+              <th>Función</th>
+              <th>Datos que procesa</th>
+              <th>Ubicación / Región</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Supabase</strong></td>
+              <td>Autenticación, base de datos, almacenamiento privado y Edge Functions</td>
+              <td>Cuenta (UUID, email), entidades sincronizadas, archivos importados, respaldos diarios, eventos técnicos propios y registro de uso/consentimiento del coach</td>
+              <td>Infraestructura gestionada en la nube (ver política de Supabase)</td>
+            </tr>
+            <tr>
+              <td><strong>OpenRouter y proveedores de modelos de IA configurados</strong></td>
+              <td>Generación de respuestas y propuestas del coach Riva AI (solo si está habilitado y aceptado)</td>
+              <td>Mensajes del chat, adjuntos opcionales y resumen de contexto de entrenamiento, mediciones y sueño</td>
+              <td>Según el proveedor del modelo (principalmente EE. UU. / global); para usuarios invitados solo se utilizan modelos pagos cuyos términos excluyen el entrenamiento con datos del usuario</td>
+            </tr>
+            <tr>
+              <td><strong>Sentry</strong></td>
+              <td>Reporte de errores y cierres inesperados</td>
+              <td>Stack trace saneado, tipo de error, versión/plataforma y UUID de Supabase (sin texto libre, sin tracing, sin IP almacenada)</td>
+              <td>Unión Europea (<code>de.sentry.io</code>)</td>
+            </tr>
+            <tr>
+              <td><strong>PostHog</strong></td>
+              <td>Grabación de sesión y rutas de pantalla (solo si el usuario acepta explícitamente)</td>
+              <td>Interacciones visuales con textos e imágenes enmascarados, nombre de pantalla, datos técnicos del dispositivo y UUID de Supabase</td>
+              <td>Unión Europea (<code>eu.i.posthog.com</code>)</td>
+            </tr>
+            <tr>
+              <td><strong>Google</strong></td>
+              <td>Inicio de sesión con Google, Health Connect (en el dispositivo) y SDK de OCR local (ML Kit)</td>
+              <td>Autenticación OAuth; lectura local desde Health Connect; métricas técnicas del SDK ML Kit</td>
+              <td>Según políticas de Google</td>
+            </tr>
+            <tr>
+              <td><strong>Expo (EAS Updates)</strong></td>
+              <td>Verificación y entrega de actualizaciones de la app</td>
+              <td>Metadatos técnicos de versión, canal y plataforma (sin datos de entrenamiento ni identidad)</td>
+              <td>EE. UU. / CDN global</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="transferencias">
+      <h2>5. Transferencias internacionales</h2>
+      <p>Dado que el desarrollador opera desde Argentina y los proveedores técnicos operan infraestructura en la Unión Europea, Estados Unidos y redes de distribución globales, tus datos pueden transferirse y procesarse fuera de tu país de residencia. Todas las comunicaciones entre la aplicación y los servidores se realizan cifradas en tránsito mediante HTTPS/TLS.</p>
+    </section>
+
+    <section id="retencion">
+      <h2>6. Conservación y plazos de retención</h2>
+      <ul>
+        <li><strong>Datos de tu cuenta en Supabase:</strong> se conservan mientras tu cuenta permanezca activa o hasta que solicites su eliminación.</li>
+        <li><strong>Copias automáticas diarias en la nube (<code>user-backups</code>):</strong> se conservan los últimos 7 días distintos; las copias más antiguas se eliminan automáticamente.</li>
+        <li><strong>Sesiones de sueño de Health Connect:</strong> se conservan únicamente los últimos 60 días; los registros anteriores se purgan automáticamente.</li>
+        <li><strong>Respuestas cacheadas de Riva AI en el servidor (<code>rf_coach_replies</code>):</strong> se eliminan a los 30 días (los mensajes que escribís no se almacenan en base de datos, solo el historial local en tu teléfono).</li>
+        <li><strong>Eventos técnicos propios (<code>rf_client_events</code>):</strong> se purgan automáticamente a los 30 días.</li>
+        <li><strong>Códigos de emparejamiento y conexiones de agentes:</strong> los códigos vencen en 10 minutos (y su registro temporal se limpia tras 1 día); las conexiones aprobadas vencen a los 90 días o al revocarlas manualmente.</li>
+        <li><strong>Datos locales del dispositivo (SQLite, charlas de Riva y foto de perfil):</strong> permanecen en tu teléfono hasta que borres los datos de la app o la desinstales.</li>
+      </ul>
+    </section>
+
+    <section id="eliminacion-cuenta">
+      <h2>7. Eliminación de cuenta y datos</h2>
+      <p>Podés eliminar tus datos de dos maneras:</p>
+      <ol>
+        <li><strong>Datos almacenados solo en el teléfono:</strong> podés borrar registros individuales dentro de la app, quitar tu foto de perfil en <strong>Ajustes → Perfil y objetivos</strong>, o eliminar todos los datos locales desde los ajustes de Android (<em>Almacenamiento → Borrar datos</em>) o desinstalando RivaForge. Cerrar sesión en la app conserva los datos locales y en la nube.</li>
+        <li><strong>Eliminación completa de tu cuenta y datos en la nube, desde la app:</strong> en <strong>Ajustes → Cuenta</strong>, tocá <em>«Eliminar cuenta y datos»</em> y confirmá. Se cierra la sesión en el teléfono y, a los <strong>7 días</strong>, se borran definitivamente tu cuenta y todos los datos asociados (perfil, rutinas, sesiones, mediciones, sueño, historial, archivos originales en <code>import-originals</code>, respaldos en <code>user-backups</code>, consentimientos, métricas de uso de Riva, conexiones de agentes y eventos técnicos propios). Si volvés a iniciar sesión antes de ese plazo, podés cancelar la eliminación.</li>
+        <li><strong>Sin acceso a la app:</strong> escribinos desde el correo vinculado a tu cuenta a <a href="mailto:emprendimientosriva@gmail.com">emprendimientosriva@gmail.com</a> con el asunto <em>«Eliminar cuenta RivaForge»</em>.</li>
+      </ol>
+      <p>Las solicitudes por correo se procesan en un plazo máximo de <strong>30 días</strong> y te confirmamos el borrado por correo electrónico. Si también activaste PostHog o existen eventos en Sentry vinculados a tu UUID, indicanos en el mismo correo si deseás solicitar su eliminación; en el caso de Sentry y PostHog, los registros técnicos restantes vencen además según sus ventanas de retención estándar.</p>
+      <p>Antes de eliminar tu cuenta, podés descargar una copia completa de tus datos (ZIP con originales o JSON) desde <strong>Ajustes → Cuenta y respaldo</strong>.</p>
+    </section>
+
+    <section id="derechos">
+      <h2>8. Tus derechos</h2>
+      <p>Según la normativa aplicable en tu jurisdicción (incluyendo la Ley 25.326 de Protección de Datos Personales de Argentina y, cuando corresponda, el RGPD europeo), tenés derecho a:</p>
+      <ul>
+        <li><strong>Acceso y portabilidad:</strong> consultar tus datos en la app y exportarlos en formato ZIP o JSON desde <strong>Ajustes → Cuenta y respaldo</strong>.</li>
+        <li><strong>Rectificación:</strong> editar o corregir tu perfil, rutinas, sesiones y mediciones directamente en la app.</li>
+        <li><strong>Eliminación:</strong> borrar tu cuenta y datos desde <strong>Ajustes → Cuenta → Eliminar cuenta y datos</strong>, o escribiendo a <a href="mailto:emprendimientosriva@gmail.com">emprendimientosriva@gmail.com</a>.</li>
+        <li><strong>Revocación de permisos y consentimientos:</strong>
+          <ul>
+            <li>Health Connect: desde <strong>Ajustes → Salud → Abrir Health Connect</strong> o en los permisos del sistema Android.</li>
+            <li>Riva AI: desde <strong>Ajustes → Riva AI → Quitar el permiso</strong>.</li>
+            <li>Grabación de sesión (PostHog): desde <strong>Ajustes → Riva AI</strong> desmarcando la casilla correspondiente.</li>
+            <li>Agentes en tu PC: desde <strong>Ajustes → Riva AI → Agentes en tu PC → Revocar</strong>.</li>
+          </ul>
+        </li>
+        <li><strong>Consultas o reclamos:</strong> podés contactarnos en <a href="mailto:emprendimientosriva@gmail.com">emprendimientosriva@gmail.com</a> y, si residís en Argentina, acudir ante la Agencia de Acceso a la Información Pública (AAIP), órgano de control de la Ley 25.326.</li>
+      </ul>
+    </section>
+
+    <section id="menores">
+      <h2>9. Menores de edad</h2>
+      <p>RivaForge está dirigida a personas mayores de 18 años. El perfil de usuario no admite edades inferiores a 18 años y no recopilamos conscientemente datos de menores. Si sos padre, madre o tutor y creés que un menor proporcionó datos a través de la app, escribinos a <a href="mailto:emprendimientosriva@gmail.com">emprendimientosriva@gmail.com</a> para eliminar la cuenta y su información de inmediato.</p>
+    </section>
+
+    <section id="cambios">
+      <h2>10. Cambios en esta política</h2>
+      <p>Podemos actualizar esta política si cambian las funciones de la app, los proveedores técnicos o los requisitos legales. Publicaremos la versión actualizada en esta misma dirección indicando la fecha de modificación al comienzo del documento. Si el cambio amplía el uso de datos opcionales (como Riva AI o grabación de sesión), te pediremos un nuevo consentimiento en la app.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>11. Contacto</h2>
+      <p>Si tenés preguntas sobre privacidad, querés ejercer tus derechos o solicitar la eliminación de tu cuenta, escribinos a:</p>
+      <ul>
+        <li><strong>Responsable:</strong> Pacheche (desarrollador independiente)</li>
+        <li><strong>Correo electrónico:</strong> <a href="mailto:emprendimientosriva@gmail.com">emprendimientosriva@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>RivaForge · <code>io.github.pacheche.rivaforge</code> · Desarrollado por Pacheche.</p>
+    </footer>
+  </main>
+</body>
+</html>
